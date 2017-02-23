@@ -28,8 +28,6 @@ function translateRows(start, perSeconds, batchSize) {
     .get(JSON_SOURCES_URL)
     .end((err, res) => {
       let response = JSON.parse(res.text).response;
-      console.log(response);
-
       interval = setInterval(() => {
 
         let requestChunk = _.slice(response.docs, start, start + batchSize)
@@ -62,7 +60,6 @@ function callGoogleAPI(data, totalNumber) {
       }
 
       let text = data.name;
-      console.log(res.body)
       if (res.body.status == 'OK') {
         text = res.body.results[0].address_components[0].long_name
       }
