@@ -1,0 +1,15 @@
+{
+  "name": "translate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "author": "yxzhou <sialvsic@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/translate": "^0.7.0",
+    "async": "^2.1.5",
+    "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "superagent": "^3.4.4"
+  }
+}
